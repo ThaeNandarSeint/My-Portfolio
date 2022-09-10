@@ -1,0 +1,16 @@
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border-top: 1px solid var(--white);
+    padding: 30px 0;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--white);
+}
+.copyright {
+    text-align: center;
+    color: var(--yellow);
+}

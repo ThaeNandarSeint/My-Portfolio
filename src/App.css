@@ -1,0 +1,82 @@
+:root{
+  --black: #001923;
+  --red: #ff0077;
+  --yellow: #fff700;
+  --blue: #9500ff;
+  --green: #29f68a;
+  --green-blue: #00fff7;
+  --white: #fff;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.text-black {
+  color: var(--black) !important;
+}
+.text-white {
+  color: var(--white) !important;
+}
+.darkMode-bg{
+  background-color: var(--white) !important;
+}
+.darkMode-text:hover{
+  background: #323c4e;
+  color: var(--white) !important;
+  margin: 0px 10px;
+}
+
+/* button */
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button > a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid var(--green);
+  text-transform: capitalize;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+.button > a::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: var(--black);
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+.button > a:hover:before{
+  transform: scaleY(0);
+}
+.button > a::after{
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: var(--black);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button > a:hover:after{
+  transform: scaleX(0);
+}
+.button > a > span{
+  position: relative;
+  z-index: 3;
+}

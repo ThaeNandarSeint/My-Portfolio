@@ -1,0 +1,53 @@
+/* form */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;    
+    width: 700px;
+    height: 500px;
+    gap: 20px;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+fieldset > legend{
+    color: var(--green);
+    font-size: 2rem;
+}
+fieldset > input, textarea{
+    width: 100%;
+    height: 50px;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--red);
+    border-radius: 8px;
+    font-size: 16px;
+}
+fieldset > textarea{
+    height: 150px !important;
+}
+fieldset > span{
+    color: var(--green);
+}
+.send-btn:hover{
+    background-color: transparent !important;
+    color: var(--red);
+}
+.send-btn{
+    background-color: var(--red) !important;
+    color: var(--white);
+    cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+    fieldset{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    fieldset{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

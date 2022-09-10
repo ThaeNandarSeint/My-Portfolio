@@ -1,0 +1,35 @@
+.skills{
+    margin: 0 5rem;
+    color: var(--black);
+    text-align: center;
+}
+.skills > *{
+    margin-top: 10px;
+}
+.skills > :nth-child(1){
+    color: var(--red);
+    font-size: 3rem;
+}
+/* progress bar */
+.s-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.progress-circle{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.progress-circle>h3{
+    color: var(--blue);
+}
+@media screen and (max-width: 400px) {
+    .skills > :nth-child(1){
+        font-size: 1.7rem;
+    }
+}

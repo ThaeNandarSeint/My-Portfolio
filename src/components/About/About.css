@@ -1,0 +1,84 @@
+.a-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    border: 3px solid var(--red);
+    box-shadow: 1px 1px 3px var(--green);
+}
+.a-content{
+    width: 50%;
+}
+.a-content p{    
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.about{
+    margin-top: 3rem;
+}
+.a-title{
+    text-align: center;
+    color: var(--green);
+}
+.about h1{
+    text-align: center;    
+    color: var(--red);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.a-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    width: 150px;
+    height: 130px;
+    padding: 0.5rem;
+    text-decoration: none;
+    /* color: var(--white); */
+}
+.a-cards{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-bottom: 2rem;
+}
+.a-card > img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.ncc-img{
+    width: 110px !important;
+}
+
+@media screen and (max-width: 1250px){
+    
+}
+@media screen and (max-width: 900px){    
+    .a-content{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .a-card{
+        margin-top: 10px;
+    } 
+}
+@media screen and (max-width: 700px){
+    
+}
+@media screen and (max-width: 400px){
+    
+}
