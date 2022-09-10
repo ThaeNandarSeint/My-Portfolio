@@ -40,7 +40,6 @@ nav .content .links {
 
 .content .links li a,
 .content .links li label {
-    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     padding: 9px 17px;
@@ -53,12 +52,6 @@ nav .content .links {
     display: none;
 }
 
-.content .links li a:hover,
-.content .links li label:hover {
-    background: #323c4e;
-}
-
-.wrapper .search-icon,
 .wrapper .menu-icon {
     color: var(--white);
     font-size: 18px;
@@ -70,55 +63,6 @@ nav .content .links {
 
 .wrapper .menu-icon {
     display: none;
-}
-
-.wrapper #show-search:checked~.search-icon i::before {
-    content: "\f00d";
-}
-
-.wrapper .search-box {
-    position: absolute;
-    height: 100%;
-    max-width: calc(100% - 50px);
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.wrapper #show-search:checked~.search-box {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.search-box input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    color: var(--white);
-    background: var(--black);
-    padding: 0 100px 0 15px;
-}
-
-.search-box input::placeholder {
-    color: #f2f2f2;
-}
-
-.search-box .go-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    line-height: 60px;
-    width: 70px;
-    background: #171c24;
-    border: none;
-    outline: none;
-    color: var(--white);
-    font-size: 20px;
-    cursor: pointer;
 }
 
 .wrapper input[type="checkbox"] {
@@ -139,14 +83,6 @@ nav .content .links {
     .content .links li a {
         padding: 8px 13px;
     }
-
-    .wrapper .search-box {
-        max-width: calc(100% - 100px);
-    }
-
-    .wrapper .search-box input {
-        padding: 0 100px 0 15px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -161,7 +97,6 @@ nav .content .links {
     nav .content .links {
         display: block;
         position: fixed;
-        background: var(--white);
         height: 100%;
         width: 100%;
         top: 70px;
@@ -189,10 +124,6 @@ nav .content .links {
         padding: 8px 18px;
         cursor: pointer;
     }
-
-    .content .links li a.desktop-link {
-        display: none;
-    }    
 }
 
 @media screen and (max-width: 400px) {
@@ -206,18 +137,5 @@ nav .content .links {
 
     .content .logo a {
         font-size: 27px;
-    }
-
-    .wrapper .search-box {
-        max-width: calc(100% - 70px);
-    }
-
-    .wrapper .search-box .go-icon {
-        width: 30px;
-        right: 0;
-    }
-
-    .wrapper .search-box input {
-        padding-right: 30px;
     }
 }

@@ -56,7 +56,6 @@
   }
   
   .circle {
-    /* background: red; */
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -167,6 +166,9 @@
     }
 }
 @media screen and (max-width: 900px){    
+    .intro{
+      margin: auto;
+    }
     .i-right{
         margin-top: 4rem;
     }  
@@ -194,10 +196,24 @@
         width: 90%;
     }
     .i-right{
-        margin-left: 170px;
+        margin: auto;
         margin-top: 150px;
         margin-bottom: 200px;
     }
+}
+@media screen and (max-width: 500px){
+  .intro{
+      flex-direction: column;
+      min-height: 140vh;
+  }
+  .i-left{
+      width: 90%;
+  }
+  .i-right{
+      margin: auto;
+      margin-top: 150px;
+      margin-bottom: 200px;
+  }
 }
 @media screen and (max-width: 400px){
     .intro{
@@ -217,7 +233,7 @@
         line-height: 1.7rem;
     }
     .i-right{
-        margin-left: 104px;
+        margin: auto;
         margin-top: 130px;
         margin-bottom: 200px;
     }

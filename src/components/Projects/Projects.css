@@ -7,10 +7,6 @@
     color: var(--red);
     font-size: 3rem;
 }
-/* .projects > p{
-    font-size: 1.3rem !important;
-    line-height: 2rem;
-} */
 @media screen and (max-width: 400px){
     .projects{
         margin: 0.5rem;

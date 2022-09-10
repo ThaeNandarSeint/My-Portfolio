@@ -21,10 +21,26 @@
 .text-white {
   color: var(--white) !important;
 }
-.darkMode-bg{
+.bg-white{
   background-color: var(--white) !important;
 }
-.darkMode-text:hover{
+.bg-black{
+  background-color: var(--black) !important;
+}
+.text-white-hover:hover{
+  background: #323c4e;
+  margin: 0px 10px;
+}
+.text-black-hover:hover{
+  background: #323c4e;
+  color: var(--white) !important;
+  margin: 0px 10px;
+}
+.text-white-hover:active{
+  background: #323c4e;
+  margin: 0px 10px;
+}
+.text-black-hover:active{
   background: #323c4e;
   color: var(--white) !important;
   margin: 0px 10px;
